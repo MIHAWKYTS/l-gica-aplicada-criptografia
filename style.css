@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+width:100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.container{
+display: flex;
+gap: 20px;
+
+
+}
+.content{
+display: flex;  
+flex-direction: column;
+
+}
+.caixa{
+height: 300px;
+width:535px;
+
+}
