@@ -90,10 +90,14 @@ html{
     justify-content: center;
   }
 
-  button{
+  button{   
+    cursor: pointer;
     border-radius: 5px;
     padding: 2px;
     border: 1px solid rgb(94, 94, 94);
   }
 
-  
+
+  button:hover{
+    background-color: #4b4b4b;
+  }
