@@ -44,21 +44,18 @@ with open("encrypted.bin", "wb") as f:
     f.write(tag)
     f.write(cipher.nonce)
     f.write(ciphertext)
-#precisamos alterar algumas das tag ,para mostrar que o codigo consegue editar alteração
- 
-
 
 
 time.sleep(2.5)
 #alterar a chave 
 #tag= cipher.nonce + aes_key
 
-
-time.sleep(2.5)
-
 #with open("encrypted.bin", "wb") as f:
     #f.write(tag)
 #ler o arquivo criado e checa pra ver se tem alteração
+
+
+
 with open("encrypted.bin", "rb") as f:
     tag = f.read(32)
     nonce = f.read(8)
@@ -70,6 +67,7 @@ try:
 except ValueError:
     print("The message was modified!")
     sys.exit(1)
+    
 #descriptografa e exibi a mensagem
 cipher = AES.new(aes_key, AES.MODE_CTR, nonce=nonce)
 message = cipher.decrypt(ciphertext)
