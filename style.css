@@ -1,41 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    color: white;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+h1{
+border-right: 4px solid;
+white-space: nowrap;
+overflow: hidden;
+width: 10ch;
+animation: typing 2s
+}
+
+
+@keyframes typing{
+from {width: 0;}
+}
+
+@keyframes blinking{
+50% {border-color: transparent;}
+}
+
+
+html{
+
+  background-color: black;
+
+}
+
   main{
   width:100vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   }
+
   .container{
   display: flex;
   gap: 20px;
-  
+  border-radius: 10px;
+
   }
   
   .content{
   display: flex;
   flex-direction: column;
-  
   }
+
   .caixa{
-  
   height: 300px;
   width:535px;
-  
+  border: 2px solid rgb(94, 94, 94);
+  border-radius: 10px;
   }
   
   .tips{
   margin-top: 10px;
-  width: 460px;
+  width: 449px;
+  border-radius: 5px;
+  border: 1px solid rgb(94, 94, 94);
+  padding: 2px;
   }
-  h1{
-    margin-top:130px;
-    display: flex;
-justify-content: center;
 
+  h1{
+  margin-top:130px;
+  display: flex;
+  justify-content: center;
+
+  }
+
+  .d{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(26, 26, 26);
+    padding: 100px;
+    border-radius: 50px;
+  }
+
+  .j{
+    display: flex;
+    justify-content: center;
+  }
+
+  button{   
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid rgb(94, 94, 94);
+  }
+
+
+  button:hover{
+    background-color: #4b4b4b;
   }
